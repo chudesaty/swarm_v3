@@ -84,7 +84,7 @@ tasks, cards, scenario = load_data(TASKS_CSV, CARDS_CSV, SCENARIO_CSV)
 
 # ---------- Sidebar ----------
 st.sidebar.header("Режим показа")
-demo_mode = st.sidebar.checkbox("Demo mode (для руководителей)", value=True)
+demo_mode = st.sidebar.checkbox("Demo mode", value=True)
 use_scenario = st.sidebar.checkbox("Сценарные карточки", value=True if scenario is not None else False, disabled=(scenario is None))
 
 st.sidebar.header("Фильтры")
